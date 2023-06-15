@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EduWisely.Database\EduWisely.Database.csproj" />
+    <ProjectReference Include="..\EduWisely.DTO\EduWisely.DTO.csproj" />
+    <ProjectReference Include="..\EduWisely.Interfaces\EduWisely.Interfaces.csproj" />
+    <ProjectReference Include="..\EduWisely.UoW\EduWisely.UoW.csproj" />
+  </ItemGroup>
+
+</Project>

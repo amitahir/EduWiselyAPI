@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>956bd1c1-8bf5-4715-8137-2136313c68ba</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.19.2" />
+    <PackageReference Include="MongoDB.Driver" Version="2.19.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EduWisely.Database\EduWisely.Database.csproj" />
+    <ProjectReference Include="..\EduWisely.DTO\EduWisely.DTO.csproj" />
+    <ProjectReference Include="..\EduWisely.Interfaces\EduWisely.Interfaces.csproj" />
+    <ProjectReference Include="..\EduWisely.Repositories\EduWisely.Repositories.csproj" />
+    <ProjectReference Include="..\EduWisely.Services\EduWisely.Services.csproj" />
+    <ProjectReference Include="..\EduWisely.UoW\EduWisely.UoW.csproj" />
+  </ItemGroup>
+
+</Project>
